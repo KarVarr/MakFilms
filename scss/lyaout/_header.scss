@@ -1,0 +1,35 @@
+.header {
+  height: 80vh;
+  background-image: url('/img/headerImg.png');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  
+  .header__warning {
+    background-color: $color-primary;
+    h4 {
+      padding: 1rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .header__info {
+    max-width: 60rem;
+    margin: 9rem;
+    .info__about {
+        margin-bottom: 3rem;
+        h1{
+            font-size: 7.5rem;
+        }
+        p {
+            font-size: 2.4rem;
+        }
+    }
+    
+    .info__buttons {
+        
+    }
+}
+}
