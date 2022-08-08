@@ -73,11 +73,19 @@ body {
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 6.4rem;
+  color: #fff;
 }
 
 .subtitle {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
+}
+
+.title--pink {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fe4d6a;
 }
 
 span {
@@ -107,6 +115,70 @@ span {
   text-transform: none;
 }
 
+.worldwide {
+  background-color: #000;
+}
+.worldwide .worldwide__title {
+  padding: 6rem 16rem;
+  text-align: center;
+  position: relative;
+}
+.worldwide .worldwide__title h2 {
+  z-index: 23;
+}
+.worldwide .worldwide__title h2::after {
+  content: "worldwide";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14rem;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+  text-shadow: -1px 1px 0 #fe4d6a, 1px 1px 0 #fe4d6a, 1px -1px 0 #fe4d6a, -1px -1px 0 #fe4d6a;
+  z-index: 1;
+}
+.worldwide .worldwide__img {
+  padding: 6rem 16rem;
+}
+.worldwide .worldwide__subtitle {
+  padding: 6rem 16rem;
+  text-align: center;
+}
+.worldwide .worldwide__subtitle p {
+  margin-bottom: 2rem;
+}
+.worldwide .worldwide__information {
+  border-top-width: 7px;
+  border-style: solid;
+  -o-border-image: linear-gradient(90deg, black 0%, white 15%, white 85%, black 100%) 1;
+     border-image: linear-gradient(90deg, black 0%, white 15%, white 85%, black 100%) 1;
+  border-bottom-width: 7px;
+  padding: 5rem 21rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(222, 66, 91, 0) 0%, rgba(222, 66, 91, 0.82) 15%, rgba(222, 66, 91, 0.82) 85%, rgba(222, 66, 91, 0) 100%);
+}
+.worldwide .worldwide__information .information__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.worldwide .worldwide__information .information__box h3 {
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+.worldwide .worldwide__information .information__box p {
+  font-weight: 700;
+}
+.worldwide .worldwide__information .information_line {
+  width: 1px;
+  height: 9rem;
+  background-color: #fff;
+}
+
 .header {
   height: 80vh;
   background-image: url("/img/headerImg.png");
@@ -117,7 +189,7 @@ span {
 .header .header__warning {
   background-color: #fe4d6a;
 }
-.header .header__warning h4 {
+.header .header__warning h2 {
   padding: 1rem;
   font-size: 2.4rem;
   font-weight: 700;
