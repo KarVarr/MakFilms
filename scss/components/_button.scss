@@ -19,3 +19,12 @@
 .btn--nav {
   text-transform: none;
 }
+
+.inner__btn {
+  #arrow {
+    color: $color-primary;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

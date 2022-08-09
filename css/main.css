@@ -130,6 +130,13 @@ span {
   text-transform: none;
 }
 
+.inner__btn #arrow {
+  color: #fe4d6a;
+}
+.inner__btn #arrow:hover {
+  color: #fff;
+}
+
 .worldwide {
   background-color: #000;
 }
@@ -239,6 +246,87 @@ span {
 .images .images__img img {
   max-width: 101%;
   height: 101%;
+}
+
+.blogs {
+  padding: 10rem 10rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.blogs .blogs__box--1,
+.blogs .blogs__box--3 {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.blogs .box__title {
+  max-width: 65rem;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.blogs .inner__title {
+  margin-bottom: 2.5rem;
+  text-align: left;
+  position: relative;
+}
+.blogs .inner__title .title,
+.blogs .inner__title .title--pink {
+  position: absolute;
+  transform: translate(-20%, -50%);
+}
+.blogs .inner__title .title {
+  font-size: 5rem;
+  top: 68%;
+  left: 17%;
+}
+.blogs .inner__title .title--pink {
+  top: 30%;
+  left: 5%;
+}
+.blogs .inner__subtitle {
+  margin-bottom: 3.5rem;
+}
+.blogs .inner__subtitle p {
+  margin-bottom: 2rem;
+}
+.blogs .inner__subtitle ul > li::marker {
+  display: list-item;
+  content: url("/img/VectorArrow.svg");
+  margin-right: 1rem;
+}
+.blogs .inner__subtitle ul > li {
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+}
+.blogs .blogs__box--2,
+.blogs .blogs__box--4 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 6rem;
+}
+.blogs .blogs__box--1 {
+  align-self: start;
+}
+.blogs .blogs__box--1 .title--pink {
+  left: 5%;
+}
+.blogs .blogs__box--1 .title {
+  left: 15%;
+}
+.blogs .blogs__box--3 {
+  align-self: start;
+}
+.blogs .blogs__box--3 .title--pink {
+  left: 8%;
+}
+.blogs .blogs__box--3 .title {
+  top: 77%;
+  left: 15%;
 }
 
 .header {
