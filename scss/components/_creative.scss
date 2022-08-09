@@ -1,0 +1,40 @@
+.creative {
+  padding: 6rem 28rem;
+  background-color: $color-black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: url('/img/EllipseLeft.png');
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  &::before {
+    content: url('/img/EllipseRight.png');
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+  }
+  .creative__title {
+    text-align: center;
+    position: relative;
+
+    .title,
+    .title--pink {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title {
+      top: 65%;
+    }
+    .title--pink {
+      top: 35%;
+    }
+  }
+
+  .creative__subtitle {
+    margin-bottom: 4rem;
+  }
+}

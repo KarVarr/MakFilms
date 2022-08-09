@@ -3,13 +3,12 @@
   text-transform: uppercase;
   padding: 1rem 2.4rem;
   font-weight: 600;
+  transition: all 0.3s ease;
   &:hover {
-    background-color: transparent;
+    background-color: $color-primary-opacity;
     outline: 2px solid $color-white;
     outline-offset: -2px;
-    color: $color-black;
   }
-  
 }
 .btn--transparant {
   background-color: transparent;
@@ -19,5 +18,4 @@
 
 .btn--nav {
   text-transform: none;
-  
 }

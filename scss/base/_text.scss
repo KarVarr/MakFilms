@@ -14,11 +14,26 @@ body {
   font-size: 1.8rem;
 }
 
-.title--pink{
+.title--pink {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.title--background {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14rem;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+  text-shadow: -1px 1px 0 $color-primary-opacity,
+    1px 1px 0 $color-primary-opacity, 1px -1px 0 $color-primary-opacity,
+    -1px -1px 0 $color-primary-opacity;
+}
+p {
+  line-height: 1.9;
 }
 span {
   font-weight: 800;

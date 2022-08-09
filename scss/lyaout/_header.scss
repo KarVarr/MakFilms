@@ -4,8 +4,7 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-position: center;
-  
-  
+
   .header__warning {
     background-color: $color-primary;
     h2 {
@@ -20,17 +19,13 @@
     max-width: 60rem;
     margin: 9rem;
     .info__about {
-        margin-bottom: 3rem;
-        h1{
-            font-size: 7.5rem;
-        }
-        p {
-            font-size: 2.4rem;
-        }
+      margin-bottom: 3rem;
+      h1 {
+        font-size: 7.5rem;
+      }
+      p {
+        font-size: 2.4rem;
+      }
     }
-    
-    .info__buttons {
-        
-    }
-}
+  }
 }

@@ -1,30 +1,26 @@
 .worldwide {
   background-color: $color-black;
   .worldwide__title {
-    padding: 6rem 16rem;
+    padding: 4rem 16rem;
     text-align: center;
     position: relative;
-    h2 {
-      z-index: 23;
-    }
-    h2::after {
-      content: 'worldwide';
+
+    .title,
+    .title--pink {
       position: absolute;
-      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 14rem;
-      font-weight: 900;
-      text-align: center;
-      color: black;
-      text-shadow: -1px 1px 0 $color-primary, 1px 1px 0 $color-primary,
-        1px -1px 0 $color-primary, -1px -1px 0 $color-primary;
-      z-index: 1;
+    }
+    .title {
+      top: 60%;
+    }
+    .title--pink {
+      top: 40%;
     }
   }
 
   .worldwide__img {
-    padding: 6rem 16rem;
+    padding: 4rem 16rem;
   }
   .worldwide__subtitle {
     padding: 6rem 16rem;
