@@ -1,0 +1,36 @@
+.confidence {
+  padding: 6rem 0;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  .confidence__title {
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+
+    .title,
+    .title--pink {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title {
+      width: 100%;
+      top: 65%;
+    }
+    .title--pink {
+      color: $color-white;
+      top: 35%;
+    }
+    .title--background {
+      color: $color-primary;
+      text-shadow: -1px 1px 0 $color-white-opacity,
+        1px 1px 0 $color-white-opacity, 1px -1px 0 $color-white-opacity,
+        -1px -1px 0 $color-white-opacity;
+    }
+  }
+ 
+}

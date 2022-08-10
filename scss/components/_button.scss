@@ -20,6 +20,16 @@
   text-transform: none;
 }
 
+.btn--white {
+  @extend .btn;
+  background-color: $color-white;
+  color: $color-primary;
+  &:hover {
+    @extend .btn--transparant;
+    color: $color-white;
+  }
+}
+
 .inner__btn {
   #arrow {
     color: $color-primary;

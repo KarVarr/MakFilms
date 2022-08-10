@@ -1,0 +1,60 @@
+.partner {
+  padding: 2rem 0 5rem;
+  background-color: $color-primary;
+  .services__title {
+    padding: 0 28rem 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    .partner__title {
+      text-align: center;
+      position: relative;
+
+      .title,
+      .title--pink {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .title {
+        top: 65%;
+      }
+      .title--pink {
+        color: $color-white;
+        top: 35%;
+      }
+      .title--background {
+        color: $color-primary;
+        text-shadow: -1px 1px 0 $color-white-opacity,
+          1px 1px 0 $color-white-opacity, 1px -1px 0 $color-white-opacity,
+          -1px -1px 0 $color-white-opacity;
+      }
+    }
+  }
+  .partner__card {
+    padding: 0 16rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 3rem;
+    }
+
+    .box__text {
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+  .partner__paragraph {
+    text-align: center;
+  }
+}
