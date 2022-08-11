@@ -4,17 +4,29 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  @include respond(tablet) {
+    padding: 6rem 12rem;
+  }
+  @include respond(phone) {
+    padding: 4rem 2.5rem;
+  }
   &::after {
     content: url('/img/EllipseLeft.png');
     position: absolute;
     top: 50%;
     left: 0;
+    @include respond(phone) {
+      width: 30%;
+    }
   }
   &::before {
     content: url('/img/EllipseRight.png');
     position: absolute;
     bottom: 10%;
     right: 0;
+    @include respond(phone) {
+      width: 30%;
+    }
   }
   .creative__title {
     text-align: center;

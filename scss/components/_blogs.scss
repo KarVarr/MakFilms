@@ -1,14 +1,21 @@
 .blogs {
-  padding: 10rem 10rem;
+  padding: 10rem;
   background-color: $color-black;
   display: flex;
   flex-direction: column;
   gap: 10rem;
+  @include respond(tablet-land) {
+    padding: 5rem;
+  }
   .blogs__box--1,
   .blogs__box--3 {
     display: flex;
     align-items: center;
     gap: 6rem;
+    @include respond(tablet-land) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   .box__title {
     max-width: 65rem;
@@ -16,6 +23,8 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    @include respond(tablet-land) {
+    }
   }
   .inner__title {
     margin-bottom: 2.5rem;
@@ -31,6 +40,15 @@
       font-size: 5rem;
       top: 68%;
       left: 17%;
+      @include respond(tablet-land) {
+        font-size: 4.5rem;
+      }
+      @include respond(tablet) {
+        font-size: 4rem;
+      }
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
     .title--pink {
       top: 30%;
@@ -60,6 +78,10 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 6rem;
+    @include respond(tablet-land) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   .blogs__box--1 {

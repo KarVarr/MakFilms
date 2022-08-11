@@ -25,6 +25,21 @@ p {
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -75,6 +90,21 @@ body {
   font-size: 6.4rem;
   color: #fff;
 }
+@media only screen and (max-width: 75em) {
+  .title {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .title {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .title {
+    font-size: 2rem;
+  }
+}
 
 .subtitle {
   font-family: "Poppins", sans-serif;
@@ -89,6 +119,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.5px;
 }
+@media only screen and (max-width: 56.25em) {
+  .title--pink {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .title--pink {
+    font-size: 0.8rem;
+  }
+}
 
 .title--background {
   font-family: "Montserrat", sans-serif;
@@ -97,6 +137,21 @@ body {
   text-align: center;
   color: black;
   text-shadow: -1px 1px 0 rgba(254, 77, 106, 0.1607843137), 1px 1px 0 rgba(254, 77, 106, 0.1607843137), 1px -1px 0 rgba(254, 77, 106, 0.1607843137), -1px -1px 0 rgba(254, 77, 106, 0.1607843137);
+}
+@media only screen and (max-width: 75em) {
+  .title--background {
+    font-size: 12rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .title--background {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .title--background {
+    font-size: 7rem;
+  }
 }
 
 p {
@@ -153,6 +208,21 @@ span {
   text-align: center;
   position: relative;
 }
+@media only screen and (max-width: 75em) {
+  .worldwide .worldwide__title {
+    padding: 3rem 10rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .worldwide .worldwide__title {
+    padding: 3rem 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__title {
+    padding: 2rem 2.5rem;
+  }
+}
 .worldwide .worldwide__title .title,
 .worldwide .worldwide__title .title--pink {
   position: absolute;
@@ -168,9 +238,19 @@ span {
 .worldwide .worldwide__img {
   padding: 4rem 16rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__img {
+    padding: 2rem 2.5rem;
+  }
+}
 .worldwide .worldwide__subtitle {
   padding: 6rem 16rem;
   text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__subtitle {
+    padding: 2rem 2.5rem;
+  }
 }
 .worldwide .worldwide__subtitle p {
   margin-bottom: 2rem;
@@ -187,6 +267,17 @@ span {
   justify-content: space-between;
   background: linear-gradient(90deg, rgba(222, 66, 91, 0) 0%, rgba(222, 66, 91, 0.82) 15%, rgba(222, 66, 91, 0.82) 85%, rgba(222, 66, 91, 0) 100%);
 }
+@media only screen and (max-width: 56.25em) {
+  .worldwide .worldwide__information {
+    padding: 2rem 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__information {
+    padding: 2rem 2.5rem;
+    flex-direction: column;
+  }
+}
 .worldwide .worldwide__information .information__box {
   display: flex;
   flex-direction: column;
@@ -196,6 +287,11 @@ span {
   font-size: 4.8rem;
   font-weight: 900;
 }
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__information .information__box h3 {
+    font-size: 8rem;
+  }
+}
 .worldwide .worldwide__information .information__box p {
   font-weight: 700;
 }
@@ -203,6 +299,14 @@ span {
   width: 1px;
   height: 9rem;
   background-color: #fff;
+}
+@media only screen and (max-width: 37.5em) {
+  .worldwide .worldwide__information .information_line {
+    width: 9rem;
+    height: 1px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 .creative {
@@ -212,17 +316,37 @@ span {
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 56.25em) {
+  .creative {
+    padding: 6rem 12rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .creative {
+    padding: 4rem 2.5rem;
+  }
+}
 .creative::after {
   content: url("/img/EllipseLeft.png");
   position: absolute;
   top: 50%;
   left: 0;
 }
+@media only screen and (max-width: 37.5em) {
+  .creative::after {
+    width: 30%;
+  }
+}
 .creative::before {
   content: url("/img/EllipseRight.png");
   position: absolute;
   bottom: 10%;
   right: 0;
+}
+@media only screen and (max-width: 37.5em) {
+  .creative::before {
+    width: 30%;
+  }
 }
 .creative .creative__title {
   text-align: center;
@@ -248,26 +372,36 @@ span {
   overflow: hidden;
 }
 .images .images__img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
 }
 .images .images__img img {
-  max-width: 101%;
-  height: 101%;
+  max-width: 20%;
 }
-
 .blogs {
-  padding: 10rem 10rem;
+  padding: 10rem;
   background-color: #000;
   display: flex;
   flex-direction: column;
   gap: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  .blogs {
+    padding: 5rem;
+  }
 }
 .blogs .blogs__box--1,
 .blogs .blogs__box--3 {
   display: flex;
   align-items: center;
   gap: 6rem;
+}
+@media only screen and (max-width: 75em) {
+  .blogs .blogs__box--1,
+.blogs .blogs__box--3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .blogs .box__title {
   max-width: 65rem;
@@ -290,6 +424,21 @@ span {
   font-size: 5rem;
   top: 68%;
   left: 17%;
+}
+@media only screen and (max-width: 75em) {
+  .blogs .inner__title .title {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .blogs .inner__title .title {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .blogs .inner__title .title {
+    font-size: 2rem;
+  }
 }
 .blogs .inner__title .title--pink {
   top: 30%;
@@ -316,6 +465,13 @@ span {
   flex-direction: row-reverse;
   align-items: center;
   gap: 6rem;
+}
+@media only screen and (max-width: 75em) {
+  .blogs .blogs__box--2,
+.blogs .blogs__box--4 {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 .blogs .blogs__box--1 {
   align-self: start;
@@ -350,6 +506,16 @@ span {
   justify-content: center;
   gap: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .partner .services__title {
+    padding: 0 16rem 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .partner .services__title {
+    padding: 0 2.5rem 3rem;
+  }
+}
 .partner .services__title .partner__title {
   text-align: center;
   position: relative;
@@ -377,6 +543,19 @@ span {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 75em) {
+  .partner .partner__card {
+    padding: 2rem 6rem 3rem;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .partner .partner__card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9rem;
+  }
+}
 .partner .partner__card .items {
   display: flex;
   flex-direction: column;
@@ -390,6 +569,7 @@ span {
 }
 .partner .partner__paragraph {
   text-align: center;
+  padding: 0 2.5rem 0;
 }
 
 .more {
@@ -505,14 +685,31 @@ span {
   padding: 5rem 9rem 1rem;
   background-color: #121212;
 }
+@media only screen and (max-width: 75em) {
+  .footer {
+    padding: 4rem 2.5rem 1rem;
+  }
+}
 .footer .footer__menu {
   padding: 0 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
+@media only screen and (max-width: 56.25em) {
+  .footer .footer__menu {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
 .footer .footer__menu .menu__logo {
   max-width: 31rem;
+}
+@media only screen and (max-width: 75em) {
+  .footer .footer__menu .menu__logo {
+    max-width: 25rem;
+  }
 }
 .footer .footer__menu .logo__img {
   margin-bottom: 2rem;
@@ -556,10 +753,30 @@ span {
 .footer .footer__menu .menu__input .input__input {
   width: 45rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer .footer__menu .menu__input .input__input {
+    width: 40rem;
+  }
+}
 .footer .footer__menu .menu__input .input__input input {
   width: 70%;
   padding: 1.3rem 5rem 1rem 1rem;
   outline: none;
+  border: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .footer__menu .menu__input .input__input input {
+    width: 60%;
+  }
+}
+.footer .footer__menu .menu__input .input__input input::-moz-placeholder {
+  font-size: 1.2rem;
+}
+.footer .footer__menu .menu__input .input__input input:-ms-input-placeholder {
+  font-size: 1.2rem;
+}
+.footer .footer__menu .menu__input .input__input input::placeholder {
+  font-size: 1.2rem;
 }
 .footer .footer__menu .menu__input .input__input button {
   background-color: #fe4d6a;
@@ -572,6 +789,16 @@ span {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 75em) {
+  .footer .footer__menu .menu__input .input__input button {
+    padding: 1.17rem 2.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .footer__menu .menu__input .input__input button {
+    padding: 1.3rem 2.4rem;
+  }
+}
 .footer .footer__menu .menu__input .input__input button:hover {
   background-color: rgba(254, 77, 106, 0.1607843137);
   outline: 2px solid #fff;
@@ -583,6 +810,14 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer .footer__copyright {
+    padding: 1rem 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
 }
 .footer .footer__copyright .copyright__text {
   font-size: 1.6rem;
@@ -626,11 +861,22 @@ span {
   position: absolute;
   bottom: 4rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .header .header__info {
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+}
 .header .header__info .info__about {
   margin-bottom: 3rem;
 }
 .header .header__info .info__about h1 {
   font-size: 7.5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .header .header__info .info__about h1 {
+    font-size: 6rem;
+  }
 }
 .header .header__info .info__about p {
   font-size: 2.4rem;
@@ -645,8 +891,13 @@ span {
 }
 .nav .nav__menu {
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .nav .nav__menu {
+    gap: 2rem;
+  }
 }
 .nav .nav__menu details > summary {
   display: flex;
@@ -676,12 +927,12 @@ span {
 }
 .nav .nav__menu summary:after {
   content: url("/img/triangleD.svg");
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .nav .nav__menu details[open] summary:after {
   content: url("/img/triangleD.svg");
   transform: rotate(180deg);
-  padding-right: 2rem;
+  padding-right: 1rem;
   padding-left: 0;
 }
 .nav .nav__btn {

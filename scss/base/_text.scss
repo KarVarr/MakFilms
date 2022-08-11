@@ -8,6 +8,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 6.4rem;
   color: $color-white;
+  @include respond(tablet-land) {
+    font-size: 5rem;
+  }
+  @include respond(tablet) {
+    font-size: 4rem;
+  }
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 .subtitle {
   font-family: 'Poppins', sans-serif;
@@ -21,6 +30,12 @@ body {
   color: $color-primary;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  @include respond(tablet) {
+    font-size: 1rem;
+  }
+  @include respond(phone) {
+    font-size: 0.8rem;
+  }
 }
 .title--background {
   font-family: 'Montserrat', sans-serif;
@@ -31,6 +46,15 @@ body {
   text-shadow: -1px 1px 0 $color-primary-opacity,
     1px 1px 0 $color-primary-opacity, 1px -1px 0 $color-primary-opacity,
     -1px -1px 0 $color-primary-opacity;
+  @include respond(tablet-land) {
+    font-size: 12rem;
+  }
+  @include respond(tablet) {
+    font-size: 10rem;
+  }
+  @include respond(phone) {
+    font-size: 7rem;
+  }
 }
 p {
   line-height: 1.9;

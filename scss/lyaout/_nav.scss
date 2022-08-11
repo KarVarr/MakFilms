@@ -6,8 +6,11 @@
   align-items: flex-start;
   .nav__menu {
     display: flex;
-    gap: 6rem;
+    gap: 4rem;
     margin-top: 2rem;
+    @include respond (tablet-land) {
+      gap: 2rem;
+    }
     details > summary {
       display: flex;
       justify-content: space-between;
@@ -37,13 +40,13 @@
    
     summary:after {
       content: url('/img/triangleD.svg');
-      padding-left: 2rem;
+      padding-left: 1rem;
     }
 
     details[open] summary:after {
       content: url('/img/triangleD.svg');
       transform: rotate(180deg);
-      padding-right: 2rem;
+      padding-right: 1rem;
       padding-left: 0;
     }
   }

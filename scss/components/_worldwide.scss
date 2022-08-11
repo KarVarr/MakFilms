@@ -1,11 +1,19 @@
 .worldwide {
   background-color: $color-black;
-  
+
   .worldwide__title {
     padding: 4rem 16rem;
     text-align: center;
     position: relative;
-
+    @include respond (tablet-land) {
+    padding: 3rem 10rem;
+  }
+    @include respond (tablet) {
+    padding: 3rem 8rem;
+  }
+    @include respond(phone) {
+      padding: 2rem 2.5rem;
+    }
     .title,
     .title--pink {
       position: absolute;
@@ -22,10 +30,16 @@
 
   .worldwide__img {
     padding: 4rem 16rem;
+    @include respond(phone) {
+      padding: 2rem 2.5rem;
+    }
   }
   .worldwide__subtitle {
     padding: 6rem 16rem;
     text-align: center;
+    @include respond(phone) {
+      padding: 2rem 2.5rem;
+    }
     p {
       margin-bottom: 2rem;
     }
@@ -54,13 +68,24 @@
       rgba(222, 66, 91, 0.82) 85%,
       rgba(222, 66, 91, 0) 100%
     );
+    @include respond(tablet) {
+      padding: 2rem 10rem;
+    }
+    @include respond(phone) {
+      padding: 2rem 2.5rem;
+      flex-direction: column;
+    }
     .information__box {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       h3 {
         font-size: 4.8rem;
         font-weight: 900;
+        @include respond(phone) {
+          font-size: 8rem;
+        }
       }
       p {
         font-weight: 700;
@@ -70,6 +95,12 @@
       width: 1px;
       height: 9rem;
       background-color: $color-white;
+      @include respond(phone) {
+        width: 9rem;
+        height: 1px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
     }
   }
 }

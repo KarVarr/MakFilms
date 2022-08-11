@@ -9,6 +9,12 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    @include respond(tablet-land) {
+      padding: 0 16rem 3rem;
+    }
+    @include respond(phone) {
+      padding: 0 2.5rem 3rem;
+    }
     .partner__title {
       text-align: center;
       position: relative;
@@ -39,6 +45,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(tablet-land) {
+      padding: 2rem 6rem 3rem;
+      gap: 1rem;
+    }
+    @include respond(tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9rem;
+    }
     .items {
       display: flex;
       flex-direction: column;
@@ -56,5 +71,6 @@
   }
   .partner__paragraph {
     text-align: center;
+    padding: 0 2.5rem 0;
   }
 }

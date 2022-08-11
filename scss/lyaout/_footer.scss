@@ -1,13 +1,24 @@
 .footer {
   padding: 5rem 9rem 1rem;
   background-color: $color-black-ish;
+  @include respond(tablet-land) {
+    padding: 4rem 2.5rem 1rem;
+  }
   .footer__menu {
     padding: 0 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: start;
+    @include respond(tablet) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
     .menu__logo {
       max-width: 31rem;
+      @include respond(tablet-land) {
+        max-width: 25rem;
+      }
     }
     .logo__img {
       margin-bottom: 2rem;
@@ -37,6 +48,8 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      @include respond(tablet-land) {
+      }
       .input__text {
         h3 {
           font-family: 'Montserrat', sans-serif;
@@ -52,10 +65,20 @@
       }
       .input__input {
         width: 45rem;
+        @include respond(phone) {
+            width: 40rem;
+          }
         input {
           width: 70%;
           padding: 1.3rem 5rem 1rem 1rem;
           outline: none;
+          border: none;
+          @include respond(phone) {
+            width: 60%;
+          }
+          &::placeholder {
+            font-size: 1.2rem;
+          }
         }
         button {
           background-color: $color-primary;
@@ -67,6 +90,12 @@
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
+          @include respond(tablet-land) {
+            padding: 1.17rem 2.4rem;
+          }
+          @include respond(phone) {
+            padding: 1.3rem 2.4rem;
+          }
           &:hover {
             background-color: $color-primary-opacity;
             outline: 2px solid $color-white;
@@ -82,6 +111,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(tablet) {
+      padding: 1rem 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
     .copyright__text {
       font-size: 1.6rem;
       color: $color-grey-text;
