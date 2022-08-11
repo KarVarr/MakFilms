@@ -599,6 +599,17 @@ span {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  z-index: 1;
 }
 .header .header__warning {
   background-color: #fe4d6a;
@@ -612,6 +623,8 @@ span {
 .header .header__info {
   max-width: 60rem;
   margin: 9rem;
+  position: absolute;
+  bottom: 4rem;
 }
 .header .header__info .info__about {
   margin-bottom: 3rem;
@@ -628,20 +641,49 @@ span {
   padding-top: 2.6rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20rem;
+  align-items: flex-start;
 }
 .nav .nav__menu {
   display: flex;
   gap: 6rem;
+  margin-top: 2rem;
 }
 .nav .nav__menu details > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  cursor: pointer;
+}
+.nav .nav__menu p {
+  cursor: pointer;
+}
+.nav .nav__menu details > p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(254, 77, 106, 0.1607843137);
+  border-radius: 0.5rem;
+  outline: 1px solid #fe4d6a;
+}
+.nav .nav__menu details > p:hover {
+  background-color: #fe4d6a;
+  outline: 2px solid #fff;
+}
+.nav .nav__menu details > p:active {
+  transform: scale(0.99);
 }
 .nav .nav__menu summary:after {
   content: url("/img/triangleD.svg");
+  padding-left: 2rem;
 }
 .nav .nav__menu details[open] summary:after {
   content: url("/img/triangleD.svg");
   transform: rotate(180deg);
+  padding-right: 2rem;
+  padding-left: 0;
+}
+.nav .nav__btn {
+  margin-top: 2rem;
 }

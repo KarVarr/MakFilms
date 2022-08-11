@@ -4,7 +4,17 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-position: center;
-
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    z-index: 1;
+  }
   .header__warning {
     background-color: $color-primary;
     h2 {
@@ -18,6 +28,8 @@
   .header__info {
     max-width: 60rem;
     margin: 9rem;
+    position: absolute;
+    bottom: 4rem;
     .info__about {
       margin-bottom: 3rem;
       h1 {
