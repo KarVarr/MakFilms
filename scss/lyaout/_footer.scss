@@ -19,6 +19,9 @@
       @include respond(tablet-land) {
         max-width: 25rem;
       }
+      @include respond(phone) {
+        max-width: 31rem;
+      }
     }
     .logo__img {
       margin-bottom: 2rem;
@@ -65,41 +68,23 @@
       }
       .input__input {
         width: 45rem;
+        height: 5rem;
         @include respond(phone) {
-            width: 40rem;
-          }
+          width: 40rem;
+        }
         input {
-          width: 70%;
-          padding: 1.3rem 5rem 1rem 1rem;
+          width: 60%;
+          height: 100%;
+          padding-left: 1rem;
+          font-size: 1.8rem;
           outline: none;
           border: none;
           @include respond(phone) {
             width: 60%;
           }
           &::placeholder {
-            font-size: 1.2rem;
-          }
-        }
-        button {
-          background-color: $color-primary;
-          text-transform: uppercase;
-          padding: 1rem 2.4rem;
-          font-size: 1.8rem;
-          font-weight: 600;
-          color: $color-white;
-          border: none;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          @include respond(tablet-land) {
-            padding: 1.17rem 2.4rem;
-          }
-          @include respond(phone) {
-            padding: 1.3rem 2.4rem;
-          }
-          &:hover {
-            background-color: $color-primary-opacity;
-            outline: 2px solid $color-white;
-            outline-offset: -2px;
+            font-size: 1.8rem;
+            color: $color-primary-opacity;
           }
         }
       }

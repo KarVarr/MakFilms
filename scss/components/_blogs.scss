@@ -78,6 +78,11 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 6rem;
+    .inner__title > .title {
+      @include respond(phone) {
+        left: 13%;
+      }
+    }
     @include respond(tablet-land) {
       flex-direction: column;
       align-items: flex-end;
@@ -104,3 +109,4 @@
     }
   }
 }
+

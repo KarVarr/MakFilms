@@ -37,8 +37,9 @@
           <div class="nav__menu">
             <details>
               <summary>DISCOVER</summary>
-              <p>Description</p>
-              <p>Summary</p>
+              <p><a href="#worldwide">Description</a></p>
+              <p><a href="#blogs">Info</a></p>
+              <p><a href="#video">Video</a></p>
             </details>
             <details>
               <summary>STUDY AREAS</summary>
@@ -58,10 +59,16 @@
               <p>Apple</p>
               <p>Alphabet</p>
             </details>
-            <a href="#">ABOUT US</a>
+            <a href="#footer">ABOUT US</a>
           </div>
-          <div class="nav__btn">
-            <a href="#" class="btn btn--nav">Find Course</a>
+          <div class="nav__burger">
+            <div class="nav__btn">
+              <a href="#" class="btn btn--nav">Find Course</a>
+            </div>
+
+            <a href="#" class="bar">
+              <span class="bar__bar"></span>
+            </a>
           </div>
         </nav>
         <!-- --------------------------------- -->
@@ -81,7 +88,7 @@
       </header>
       <!-- ==============WORLDWIDE===================== -->
 
-      <section class="worldwide">
+      <section class="worldwide" id="worldwide">
         <div class="worldwide__title">
           <h2 class="title--background">worldwide</h2>
           <h4 class="title--pink">overview</h4>
@@ -167,7 +174,7 @@
       </section>
 
       <!-- ==============BLOGS===================== -->
-      <section class="blogs">
+      <section class="blogs" id="blogs">
         <div class="blogs__box--1">
           <div class="box__title">
             <div class="inner__title">
@@ -395,7 +402,7 @@
 
       <!-- ==============MORE===================== -->
 
-      <section class="more">
+      <section class="more" id="video">
         <div class="more__title">
           <h2 class="title--background">mozaik</h2>
           <h4 class="title--pink">overview</h4>
@@ -406,8 +413,6 @@
 
         <div class="more__video">
           <video
-            width="1300"
-            height="577"
             controls="controls"
             poster="img/Video.png"
             loop="loop"
@@ -420,7 +425,7 @@
         </div>
       </section>
 
-      <!-- ==============MORE===================== -->
+      <!-- ==============CONFIDENCE===================== -->
 
       <section class="confidence">
         <div class="confidence__title">
@@ -436,7 +441,7 @@
 
       <!-- ==============FOOTER===================== -->
 
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__menu">
           <div class="menu__logo">
             <div class="logo__img">
@@ -481,7 +486,7 @@
                 placeholder="Enter Your Adress Email"
                 required
               />
-              <button type="submit" class="btn">Submit</button>
+              <button type="submit" class="btn--footer">Submit</button>
             </form>
           </div>
         </div>

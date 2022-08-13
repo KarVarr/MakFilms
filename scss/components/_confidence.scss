@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  @include respond(phone){
+    padding: 3rem 0;
+  }
   .confidence__title {
     margin-bottom: 3rem;
     text-align: center;
