@@ -1169,11 +1169,11 @@ span {
           transform: scale(0.99);
 }
 .nav .nav__menu summary:after {
-  content: url("/img/triangleD.svg");
+  content: url("../img/triangleD.svg");
   padding-left: 1rem;
 }
 .nav .nav__menu details[open] summary:after {
-  content: url("/img/triangleD.svg");
+  content: url("../img/triangleD.svg");
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);

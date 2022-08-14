@@ -68,12 +68,12 @@
     }
 
     summary:after {
-      content: url('/img/triangleD.svg');
+      content: url('../img/triangleD.svg');
       padding-left: 1rem;
     }
 
     details[open] summary:after {
-      content: url('/img/triangleD.svg');
+      content: url('../img/triangleD.svg');
       transform: rotate(180deg);
       padding-right: 1rem;
       padding-left: 0;
