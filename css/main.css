@@ -216,10 +216,10 @@ span {
   color: #fff;
 }
 
-.inner__btn #arrow {
+.inner__btn .arrow {
   color: #fe4d6a;
 }
-.inner__btn #arrow:hover {
+.inner__btn .arrow:hover {
   color: #fff;
 }
 
@@ -1013,7 +1013,7 @@ span {
 
 .header {
   height: 100vh;
-  background-image: url("/img/headerImg.png");
+  background-image: url("../img/headerImg.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-position: center;
