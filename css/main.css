@@ -371,7 +371,7 @@ span {
   }
 }
 .creative::after {
-  content: url("/img/EllipseLeft.png");
+  content: url("../img/EllipseLeft.png");
   position: absolute;
   top: 50%;
   left: 0;
@@ -382,7 +382,7 @@ span {
   }
 }
 .creative::before {
-  content: url("/img/EllipseRight.png");
+  content: url("../img/EllipseRight.png");
   position: absolute;
   bottom: 10%;
   right: 0;
@@ -524,7 +524,7 @@ span {
 }
 .blogs .inner__subtitle ul > li::marker {
   display: list-item;
-  content: url("/img/VectorArrow.svg");
+  content: url("../img/VectorArrow.svg");
   margin-right: 1rem;
 }
 .blogs .inner__subtitle ul > li {
