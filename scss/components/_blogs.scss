@@ -12,6 +12,12 @@
     display: flex;
     align-items: center;
     gap: 6rem;
+    .box__img{
+      max-width: 40rem;
+      @include respond (tablet-land) {
+        max-width: 100%;
+      }
+    }
     @include respond(tablet-land) {
       flex-direction: column;
       align-items: flex-start;
@@ -61,14 +67,11 @@
     p {
       margin-bottom: 2rem;
     }
-    ul > li::marker {
-      display: list-item;
-      content: url('../img/VectorArrow.svg');
-      margin-right: 1rem;
-    }
+    
     ul > li {
       padding-left: 4rem;
       padding-bottom: 3rem;
+      list-style-image: url("../img/VectorArrow.svg");
     }
   }
 
@@ -78,6 +81,12 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 6rem;
+    .inner__img {
+     max-width: 50rem;
+     @include respond (tablet-land) {
+        max-width: 100%;
+      }
+    }
     .inner__title > .title {
       @include respond(phone) {
         left: 13%;
@@ -85,7 +94,7 @@
     }
     @include respond(tablet-land) {
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-end; 
     }
   }
 

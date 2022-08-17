@@ -25,6 +25,8 @@ p {
 
 html {
   font-size: 62.5%;
+  -webkit-text-size-adjust: 16px;
+  -ms-text-size-adjust: 16px;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -454,6 +456,16 @@ span {
           align-items: center;
   gap: 6rem;
 }
+.blogs .blogs__box--1 .box__img,
+.blogs .blogs__box--3 .box__img {
+  max-width: 40rem;
+}
+@media only screen and (max-width: 75em) {
+  .blogs .blogs__box--1 .box__img,
+.blogs .blogs__box--3 .box__img {
+    max-width: 100%;
+  }
+}
 @media only screen and (max-width: 75em) {
   .blogs .blogs__box--1,
 .blogs .blogs__box--3 {
@@ -522,14 +534,10 @@ span {
 .blogs .inner__subtitle p {
   margin-bottom: 2rem;
 }
-.blogs .inner__subtitle ul > li::marker {
-  display: list-item;
-  content: url("../img/VectorArrow.svg");
-  margin-right: 1rem;
-}
 .blogs .inner__subtitle ul > li {
   padding-left: 4rem;
   padding-bottom: 3rem;
+  list-style-image: url("../img/VectorArrow.svg");
 }
 .blogs .blogs__box--2,
 .blogs .blogs__box--4 {
@@ -544,6 +552,16 @@ span {
       -ms-flex-align: center;
           align-items: center;
   gap: 6rem;
+}
+.blogs .blogs__box--2 .inner__img,
+.blogs .blogs__box--4 .inner__img {
+  max-width: 50rem;
+}
+@media only screen and (max-width: 75em) {
+  .blogs .blogs__box--2 .inner__img,
+.blogs .blogs__box--4 .inner__img {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .blogs .blogs__box--2 .inner__title > .title,
@@ -1134,6 +1152,9 @@ span {
     transition: all 0.3s ease-in-out;
   }
 }
+.nav .nav__menu ::-webkit-details-marker {
+  display: none;
+}
 .nav .nav__menu details > summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1144,7 +1165,7 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
+  list-style-type: none;
   cursor: pointer;
 }
 .nav .nav__menu p {

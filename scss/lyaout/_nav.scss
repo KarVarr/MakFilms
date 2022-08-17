@@ -39,18 +39,21 @@
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
-
+    //delete marker for Safary
+    ::-webkit-details-marker {
+      display: none;
+    }
     details > summary {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      list-style: none;
+      list-style-type: none;
       cursor: pointer;
     }
     p {
       cursor: pointer;
     }
-    details > p{
+    details > p {
       font-weight: 600;
       font-size: 1.6rem;
       padding: 0.5rem;
