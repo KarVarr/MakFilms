@@ -1,5 +1,5 @@
 # MakFilms
-I continue to practice in creating sites. Landing!
+Landing!
 
 - Сайт собран для практики.
 - The site is built for practice. 
